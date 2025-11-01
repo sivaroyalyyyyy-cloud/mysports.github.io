@@ -1,0 +1,456 @@
+:root {
+    /* Colors */
+    --bg-main: #F8F9FA;
+    --white: #FFFFFF;
+    --text: #2D3748;
+    --text-muted: #718096;
+    --border: #E2E8F0;
+    
+    /* Stats Card Colors */
+    --orange-bg: #FFF7ED;
+    --orange-text: #C2410C;
+    --pink-bg: #FFF1F2;
+    --pink-text: #BE123C;
+    --beige-bg: #FFFBEB;
+    --beige-text: #B45309;
+    --gray-bg: #F8FAFC;
+    --gray-text: #475569;
+    --yellow-bg: #FEFCE8;
+    --yellow-text: #CA8A04;
+    --purple-bg: #FAF5FF;
+    --purple-text: #7E22CE;
+}
+
+/* Layout */
+body { 
+    margin: 0;
+    font-family: 'Inter', system-ui, sans-serif;
+    background: var(--bg-main);
+    color: var(--text);
+    line-height: 1.5;
+}
+
+.app-layout {
+    min-height: 100vh;
+}
+
+/* Header */
+.top-header {
+    background: var(--white);
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-muted);
+}
+
+.site-title {
+    font-size: 1.5rem;
+    margin: 0;
+    color: #F87171;
+}
+
+.header-info {
+    margin-left: auto;
+    color: var(--text-muted);
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 2rem;
+}
+
+.notifications {
+    cursor: pointer;
+}
+
+.avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: #F87171;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.user-info {
+    line-height: 1.2;
+}
+
+.user-info .roll {
+    color: var(--text-muted);
+    font-size: 0.875rem;
+}
+
+/* Dashboard Content */
+.dashboard-content {
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Stats Grid */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    padding: 1.5rem;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.stat-card.orange { background: var(--orange-bg); color: var(--orange-text); }
+.stat-card.pink { background: var(--pink-bg); color: var(--pink-text); }
+.stat-card.beige { background: var(--beige-bg); color: var(--beige-text); }
+.stat-card.gray { background: var(--gray-bg); color: var(--gray-text); }
+.stat-card.yellow { background: var(--yellow-bg); color: var(--yellow-text); }
+.stat-card.purple { background: var(--purple-bg); color: var(--purple-text); }
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+}
+
+.stat-label {
+    font-size: 0.875rem;
+    opacity: 0.9;
+}
+
+.stat-progress {
+    margin-top: 1rem;
+    background: rgba(255,255,255,0.5);
+    border-radius: 999px;
+    height: 0.5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-bar {
+    height: 100%;
+    background: currentColor;
+    opacity: 0.3;
+}
+
+.progress-text {
+    position: absolute;
+    right: 0;
+    top: -1.5rem;
+    font-size: 0.875rem;
+}
+
+/* Live Matches Section */
+.matches-section {
+    background: var(--white);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.section-header h2 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.pulse {
+    color: #EF4444;
+    animation: pulse 2s infinite;
+}
+
+.view-all {
+    color: var(--text-muted);
+    text-decoration: none;
+}
+
+.match-list {
+    display: grid;
+    gap: 1rem;
+}
+
+.match-card {
+    background: var(--bg-main);
+    border-radius: 0.75rem;
+    padding: 1rem;
+}
+
+.match-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.live-badge {
+    background: #FEE2E2;
+    color: #EF4444;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.match-type {
+    color: var(--text-muted);
+}
+
+.match-time {
+    margin-left: auto;
+    color: var(--text-muted);
+}
+
+.match-teams {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.team-name {
+    font-weight: 500;
+}
+
+.team-score {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.vs {
+    color: var(--text-muted);
+}
+
+.match-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.venue {
+    color: var(--text-muted);
+    font-size: 0.875rem;
+}
+
+.watch-live {
+    background: #EF4444;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+/* Events Section */
+.events-section {
+    background: var(--white);
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+.events-list {
+    display: grid;
+    gap: 1rem;
+}
+
+.event-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: var(--bg-main);
+    border-radius: 0.75rem;
+}
+
+.event-info h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1rem;
+}
+
+.event-tag {
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.event-tag.cricket { background: #D1FAE5; color: #059669; }
+.event-tag.badminton { background: #E0E7FF; color: #4F46E5; }
+.event-tag.volleyball { background: #FEF3C7; color: #D97706; }
+
+.event-time {
+    color: var(--text-muted);
+    text-align: right;
+    font-size: 0.875rem;
+}
+
+.set-reminder {
+    background: var(--white);
+    border: 1px solid var(--border);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    color: var(--text);
+    font-weight: 500;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+    .top-header {
+        padding: 1rem;
+    }
+    
+    .header-info {
+        display: none;
+    }
+    
+    .dashboard-content {
+        padding: 1rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .event-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .event-time {
+        text-align: center;
+    }
+}
+
+/* Achievements Section */
+.achievements-section {
+    background: #FFF5F5;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+.section-subtitle {
+    color: var(--text-muted);
+    margin: 0.5rem 0 1.5rem;
+}
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.achievement-card {
+    background: var(--white);
+    border-radius: 0.75rem;
+    padding: 1.25rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.achievement-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.sport-tag {
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.sport-tag.cricket {
+    background: #D1FAE5;
+    color: #065F46;
+}
+
+.sport-tag.kabaddi {
+    background: #EDE9FE;
+    color: #5B21B6;
+}
+
+.sport-tag.volleyball {
+    background: #1E40AF;
+    color: white;
+}
+
+.achievement-icon {
+    font-size: 1.25rem;
+}
+
+.achievement-title {
+    margin: 0 0 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.achievement-desc {
+    color: var(--text-muted);
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+.achievement-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.875rem;
+}
+
+.achievement-date {
+    color: var(--text-muted);
+}
+
+.verified-badge {
+    color: #059669;
+    font-weight: 500;
+}
+
+/* Additional responsive adjustments */
+@media (max-width: 768px) {
+    .achievements-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,199 @@
+/* Match Scorecard Specific Styles */
+.match-content {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.match-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.match-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.match-subtitle {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.match-details-card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+.event-title {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.match-meta {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    color: #666;
+}
+
+.venue, .date {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.status-badge {
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.status-badge.completed {
+    background: #ffebee;
+    color: #e57373;
+}
+
+.new-match {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+}
+
+.scorecard-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.team-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.team-card.cse {
+    border-top: 4px solid #4caf50;
+}
+
+.team-card.ece {
+    border-top: 4px solid #2196f3;
+}
+
+.team-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.team-logo {
+    font-size: 2rem;
+}
+
+.team-name {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.score-display {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.score-display .overs {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.stat-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-label {
+    display: block;
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+
+.stat-value {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.player-tags {
+    display: flex;
+    gap: 1rem;
+}
+
+.tag {
+    background: #f5f5f5;
+    padding: 0.3rem 1rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.match-result {
+    background: #fff8e1;
+    border-radius: 15px;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.trophy-icon {
+    font-size: 3rem;
+}
+
+.result-text {
+    text-align: center;
+}
+
+.winner-text {
+    color: #f57f17;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.congrats-text {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .scorecard-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .match-meta {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .new-match {
+        position: static;
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
