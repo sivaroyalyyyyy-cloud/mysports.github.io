@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JNTUACEK Sports Club Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <div class="app-layout">
+        <header class="top-header fade-in">
+            <button class="menu-toggle hover-grow">☰</button>
+            <h1 class="site-title hover-lift">JNTUACEK Sports Club</h1>
+            <div class="header-info slide-in">
+                <span class="dept-info">Computer Science - 3rd Year</span>
+            </div>
+            <div class="user-profile slide-in">
+                <div class="notifications hover-grow">🔔</div>
+                <div class="avatar hover-grow">SN</div>
+                <div class="user-info">
+                    <div class="name hover-lift">Student Name</div>
+                    <div class="roll">20B91A05XX</div>
+                </div>
+            </div>
+        </header>
+
+        <div class="dashboard-content">
+            <!-- Stats Cards -->
+            <div class="stats-grid">
+                <div class="stat-card orange fade-in hover-lift">
+                    <div class="stat-icon hover-grow">🏆</div>
+                    <div class="stat-number">8</div>
+                    <div class="stat-label">Active Tournaments</div>
+                    <div class="stat-progress">
+                        <div class="progress-bar" style="width: 53%"></div>
+                        <span class="progress-text">53%</span>
+                    </div>
+                </div>
+
+                <div class="stat-card pink fade-in hover-lift">
+                    <div class="stat-icon hover-grow">📊</div>
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Live Matches</div>
+                    <div class="stat-progress">
+                        <div class="progress-bar" style="width: 30%"></div>
+                        <span class="progress-text">30%</span>
+                    </div>
+                </div>
+
+                <div class="stat-card beige fade-in hover-lift">
+                    <div class="stat-icon hover-grow">👥</div>
+                    <div class="stat-number">324</div>
+                    <div class="stat-label">Total Players</div>
+                    <div class="stat-progress">
+                        <div class="progress-bar" style="width: 65%"></div>
+                        <span class="progress-text">65%</span>
+                    </div>
+                </div>
+
+                <div class="stat-card gray fade-in hover-lift">
+                    <div class="stat-icon hover-grow">📅</div>
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Upcoming Events</div>
+                    <div class="stat-progress">
+                        <div class="progress-bar" style="width: 15%"></div>
+                        <span class="progress-text">15%</span>
+                    </div>
+                </div>
+
+                <div class="stat-card yellow fade-in hover-lift">
+                    <div class="stat-icon hover-grow">🏅</div>
+                    <div class="stat-number">12</div>
+                    <div class="stat-label">Your Ranking</div>
+                    <div class="stat-progress">
+                        <div class="progress-bar" style="width: 24%"></div>
+                        <span class="progress-text">24%</span>
+                    </div>
+                </div>
+
+                <div class="stat-card purple fade-in hover-lift">
+                    <div class="stat-icon hover-grow">🎯</div>
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Achievements</div>
+                    <div class="stat-progress">
+                        <div class="progress-bar" style="width: 10%"></div>
+                        <span class="progress-text">10%</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Live Matches Section -->
+            <div class="matches-section">
+                <div class="section-header">
+                    <h2><span class="pulse">●</span> Live Matches</h2>
+                    <a href="#" class="view-all">View All</a>
+                </div>
+
+                <div class="match-list">
+                    <div class="match-card live slide-in hover-lift">
+                        <div class="match-header">
+                            <span class="live-badge">LIVE</span>
+                            <span class="match-type hover-grow">Cricket</span>
+                            <span class="match-time">12.4 Overs</span>
+                        </div>
+                        <div class="match-teams">
+                            <div class="team">
+                                <span class="team-name">CSE Warriors</span>
+                                <span class="team-score">156</span>
+                            </div>
+                            <div class="vs">VS</div>
+                            <div class="team">
+                                <span class="team-name">ECE Titans</span>
+                                <span class="team-score">89</span>
+                            </div>
+                        </div>
+                        <div class="match-footer">
+                            <span class="venue hover-grow">📍 Main Ground</span>
+                            <button class="watch-live btn-animate">Watch Live</button>
+                        </div>
+                    </div>
+
+                    <div class="match-card live slide-in hover-lift">
+                        <div class="match-header">
+                            <span class="live-badge">LIVE</span>
+                            <span class="match-type hover-grow">Kabaddi</span>
+                            <span class="match-time">25:30</span>
+                        </div>
+                        <div class="match-teams">
+                            <div class="team">
+                                <span class="team-name">MECH Lions</span>
+                                <span class="team-score">28</span>
+                            </div>
+                            <div class="vs">VS</div>
+                            <div class="team">
+                                <span class="team-name">EEE Eagles</span>
+                                <span class="team-score">24</span>
+                            </div>
+                        </div>
+                        <div class="match-footer">
+                            <span class="venue hover-grow">📍 Indoor Court</span>
+                            <button class="watch-live btn-animate">Watch Live</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Upcoming Events Section -->
+            <div class="events-section">
+                <div class="section-header">
+                    <h2>📅 Upcoming Events</h2>
+                </div>
+
+                <div class="events-list">
+                    <div class="event-card fade-in hover-lift">
+                        <div class="event-info">
+                            <h3 class="hover-lift">Inter-Department Championship Final</h3>
+                            <span class="event-tag cricket hover-grow">Cricket</span>
+                        </div>
+                        <div class="event-time">
+                            <span>8/15/2025</span>
+                            <span>14:30</span>
+                        </div>
+                        <button class="set-reminder btn-animate">Set Reminder</button>
+                    </div>
+
+                    <div class="event-card fade-in hover-lift">
+                        <div class="event-info">
+                            <h3 class="hover-lift">Singles Tournament Semi-Final</h3>
+                            <span class="event-tag badminton hover-grow">Badminton</span>
+                        </div>
+                        <div class="event-time">
+                            <span>8/18/2025</span>
+                            <span>10:00</span>
+                        </div>
+                        <button class="set-reminder btn-animate">Set Reminder</button>
+                    </div>
+
+                    <div class="event-card fade-in hover-lift">
+                        <div class="event-info">
+                            <h3 class="hover-lift">Team Trials & Selection</h3>
+                            <span class="event-tag volleyball hover-grow">Volleyball</span>
+                        </div>
+                        <div class="event-time">
+                            <span>8/20/2025</span>
+                            <span>16:00</span>
+                        </div>
+                        <button class="set-reminder btn-animate">Set Reminder</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Achievements Section -->
+            <div class="achievements-section">
+                <div class="section-header">
+                    <h2>🏆 Your Recent Achievements</h2>
+                    <a href="#" class="view-all">View All Achievements</a>
+                </div>
+                <p class="section-subtitle">Your outstanding performances and recognitions</p>
+
+                <div class="achievements-grid">
+                    <div class="achievement-card slide-in hover-lift">
+                        <div class="achievement-header">
+                            <span class="sport-tag cricket hover-grow">Cricket</span>
+                            <span class="achievement-icon hover-grow">🎯</span>
+                        </div>
+                        <h3 class="achievement-title hover-lift">Best Batsman 2024</h3>
+                        <p class="achievement-desc">Highest run scorer in tournament</p>
+                        <div class="achievement-footer">
+                            <span class="achievement-date">12/15/2024</span>
+                            <span class="verified-badge hover-grow">✓ Verified</span>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card slide-in hover-lift">
+                        <div class="achievement-header">
+                            <span class="sport-tag kabaddi hover-grow">Kabaddi</span>
+                            <span class="achievement-icon hover-grow">👥</span>
+                        </div>
+                        <h3 class="achievement-title hover-lift">Team Captain & MVP</h3>
+                        <p class="achievement-desc">Led team to championship victory</p>
+                        <div class="achievement-footer">
+                            <span class="achievement-date">11/10/2024</span>
+                            <span class="verified-badge hover-grow">✓ Verified</span>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card slide-in hover-lift">
+                        <div class="achievement-header">
+                            <span class="sport-tag volleyball hover-grow">Volleyball</span>
+                            <span class="achievement-icon hover-grow">🎯</span>
+                        </div>
+                        <h3 class="achievement-title hover-lift">Best Setter Award</h3>
+                        <p class="achievement-desc">Outstanding technical performance</p>
+                        <div class="achievement-footer">
+                            <span class="achievement-date">10/5/2024</span>
+                            <span class="verified-badge hover-grow">✓ Verified</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

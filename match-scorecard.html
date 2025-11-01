@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Match Scorecard - JNTUACEK Sports Club</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <div class="app-layout">
+        <header class="top-header fade-in">
+            <button class="menu-toggle hover-grow">☰</button>
+            <h1 class="site-title hover-lift">JNTUACEK Sports Club</h1>
+            <div class="header-info slide-in">
+                <span class="dept-info">Computer Science - 3rd Year</span>
+            </div>
+            <div class="user-profile slide-in">
+                <div class="notifications hover-grow">🔔</div>
+                <div class="avatar hover-grow">SN</div>
+                <div class="user-info">
+                    <div class="name hover-lift">Student Name</div>
+                    <div class="roll">20B91A05XX</div>
+                </div>
+            </div>
+        </header>
+
+        <main class="match-content fade-in">
+            <div class="match-header slide-in">
+                <h1 class="match-title">Cricket Match Scorecard</h1>
+                <p class="match-subtitle">Complete team squads with animated stats</p>
+            </div>
+
+            <div class="match-details-card slide-in">
+                <h2 class="event-title hover-lift">Inter-Department Cricket Championship - Final</h2>
+                <div class="match-meta">
+                    <span class="venue hover-grow">📍 Main Ground, JNTUACEK</span>
+                    <span class="date hover-grow">📅 October 28, 2025</span>
+                    <span class="status-badge completed">COMPLETED</span>
+                </div>
+                <button class="btn-primary new-match btn-animate">+ Create New Match</button>
+            </div>
+
+            <div class="scorecard-grid">
+                <div class="team-card cse fade-in hover-lift">
+                    <div class="team-header">
+                        <div class="team-logo">🏏</div>
+                        <h3 class="team-name">CSE Warriors</h3>
+                    </div>
+                    <div class="team-stats">
+                        <div class="score-display">
+                            <span class="runs">234</span>
+                            <span class="overs">/ 5 (20 ov)</span>
+                        </div>
+                        <div class="stat-row">
+                            <div class="stat-item">
+                                <span class="stat-label">Run Rate</span>
+                                <span class="stat-value">11.7</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Extras</span>
+                                <span class="stat-value">12</span>
+                            </div>
+                        </div>
+                        <div class="player-tags">
+                            <span class="tag hover-grow">11 Playing</span>
+                            <span class="tag hover-grow">5 Impact</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card ece fade-in hover-lift">
+                    <div class="team-header">
+                        <div class="team-logo">⚡</div>
+                        <h3 class="team-name">ECE Titans</h3>
+                    </div>
+                    <div class="team-stats">
+                        <div class="score-display">
+                            <span class="runs">167</span>
+                            <span class="overs">/ 10 (19.4 ov)</span>
+                        </div>
+                        <div class="stat-row">
+                            <div class="stat-item">
+                                <span class="stat-label">Run Rate</span>
+                                <span class="stat-value">8.5</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Extras</span>
+                                <span class="stat-value">8</span>
+                            </div>
+                        </div>
+                        <div class="player-tags">
+                            <span class="tag hover-grow">11 Playing</span>
+                            <span class="tag hover-grow">5 Impact</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="match-result slide-in">
+                <div class="trophy-icon">🏆</div>
+                <div class="result-text">
+                    <h2 class="winner-text hover-lift">CSE Warriors Won by 67 Runs! 🎉</h2>
+                    <p class="congrats-text">Congratulations to the champions!</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="js/match-scorecard.js"></script>
+</body>
+</html>
